@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <!-- GSAP CDN LINK -->
+  
+  <title>Real State Website</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="/index.html"></a><img src="/image/logo.png" alt=""></a></div>
+      <div class="nav-toggle" id="navToggle">&#9776;</div>
+      <ul class="nav-menu"id="navMenu">
+        <li><a href="/index.html" class="active">Home</a></li>
+        <li ><a href="/PROPERTIES.html">Properties</a> </li>
+        <li><a href="#">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+       
+      </ul>
+    </nav>
+    </header>
+    <section class="team">
+      <div class="our">
+        <center>ABOUT-<span>US
+        </span></center>
+      </div>
+  
+      <div class="team-member">
+        <img src="/image/bul1.jpg" alt="Team Member 1">
+        <h3> 1 RK Properties</h3>
+        <button class="btn"><a href="/1_rk.html"> View More</a></button>
+  
+      </div>
+      <div class="team-member">
+        <img src="/image/bul2.jpg" alt="Team Member 1">
+        <h3>1 BHK Properties</h3>
+        <button class="btn"><a href="/1Bhk.html"> View More</a></button>
+  
+      </div>
+      <div class="team-member">
+        <img src="/image/bul3.jpg" alt="Team Member 1">
+        <h3>2 BHK Properties</h3>
+        <button class="btn"><a href="/2Bhk.html"> View More</a></a></button>
+  
+      </div>
+      <!-- FOOTER -->
+      <footer>
+        <div class="row">
+            <div class="col">
+                <img src="/image/logo.png" class="footer_logo">
+                <p class="footer_about">Real estate is defined as the land and any permanent structures, like a home, or improvements attached to the
+                  land, whether natural or man-made. Real estate is a form of real property.Real estate is real property that
+                  consists of land and improvements, which include buildings, fixtures, roads, structures, and utility systems.
+                </p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="bottom_line"><span></span></div></h3>
+                <p>vasai west 60ft Road</p>
+                <p>Maharastra </p>
+                <p>Mumabi, ZIP 401202, India</p>
+                <p class="footer_email">alexastockphotos@gamil.com</p>
+                <h4>+91 9892195068</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="bottom_line"><span></span></div></h3>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SERVICE</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                
+                <form>
+                    <ion-icon class="icon" name="mail"></ion-icon>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><ion-icon class="icon_right" name="arrow-round-forward"></ion-icon></button>
+                </form>
+                <div class="social_icons">
+                    <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
+                    <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
+                    <ion-icon class="social_icon" name="logo-twitter"></ion-icon>
+                    <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Web Geny Ⓒ 2023 - All Rights Reserved</p>
+     </footer> 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+   <script src="/js/script.js"></script>
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navToggle = document.getElementById("navToggle");
+        const navMenu = document.getElementById("navMenu");
+
+        navToggle.addEventListener("click", function () {
+          navMenu.classList.toggle("show");
+        });
+      });
+
+    
+    </script>
+  </body>
+  </html>

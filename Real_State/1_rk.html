@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- https://www.youtube.com/watch?v=YHHv3-w1MOc img and text sction -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <!-- GSAP CDN LINK -->
+  <style>
+   article, aside {
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+/* default navigation values */
+aside{
+  
+  border-radius: 20px;
+}
+
+aside .il{
+  background-image: linear-gradient(to top, #3f4e4f 0%, #2c3639 60%);
+  border-radius: 20px;
+    padding: 0 5px;
+    width:100% ;
+    height: 930px;
+  }
+  aside img{
+  background-image: linear-gradient(to top, #3f4e4f 0%, #2c3639 60%);
+  border-radius: 20px;
+  margin-top: 15px;
+  padding-left: 12px;
+    width:95% ;
+    height: 890px;
+  }
+/* larger screen */
+@media screen and (min-width: 30rem) {
+  body {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    max-width: 100rem;
+    margin: auto;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-bottom: 0.5rem solid;
+  }
+  nav, header {
+    order: -1;
+  }
+  article {
+    flex: 65%;
+  }
+  aside {
+    flex: 35%;
+    
+  }
+  
+
+}
+
+.container {
+  
+        background-image: linear-gradient(to top, #3f4e4f 0%, #2c3639 60%);
+       border-radius: 20px;
+        width: 100%;
+       display: flex;
+       justify-content: space-around; /* Adjust as needed */
+       flex-wrap: wrap;
+       margin-bottom: 5px;
+       gap: 20px;
+     }
+     
+     .item { 
+         padding: 20px;
+         align-items: center;
+       text-align: center;
+       width: 40%; /* Adjust as needed */
+     
+     }
+     
+     .item img {
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+       width:400px;
+       height: auto;
+     }
+     .right{
+      padding: 0 10px;
+     }
+        button {
+    margin-bottom: 5px;
+    background-color:  #a27b5c;
+    color:white;
+    font-size: 1rem;
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+     }
+     .one button{
+      margin-top: 2px;
+      height: 33px;
+      width: 33px;
+      border-radius: 20px;
+      
+      text-decoration: none;
+     }
+     button a{
+      text-decoration: none;
+      color: white;
+     }
+.right h3{
+  font-size: .9rem;
+  color: white;
+  text-transform: uppercase;
+  
+}
+.right h2,h1{
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+}   
+     @media screen and (max-width: 740px) {
+      /* .item img{
+        
+        margin-top: -17px;
+        margin-left: -85px;
+        width:290px;
+      } */
+      aside{
+        display: none;
+      }
+      .container .item img{
+        border-radius: 20px;
+         width:250%;
+         margin-left: -25px;
+        
+      
+      }
+      .container .item img:hover{
+        transform: translateX(-2px);
+      }
+
+     }
+     @media screen and (max-width: 1180px) {
+      main aside{
+      display: none;
+     }
+      .container .item img{
+       
+        overflow: hidden;
+        
+      
+      }
+     }
+     @media screen and (max-width: 1368px) {
+     main aside{
+      display: none;
+     }
+      .container .item img{
+        border-radius: 20px;
+         width:110%;
+         /* margin-left: -165px; */
+      }
+     
+     }
+    
+  </style>
+  <title>Real State Website</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="/index.html"></a><img src="/image/logo.png" alt=""></a></div>
+      <div class="nav-toggle" id="navToggle">&#9776;</div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/index.html" class="active">Home</a></li>
+        <li><a href="PROPERTIES.html"> Properties</a> </li>
+        <li><a href="/About.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        
+      </ul>
+    </nav>
+    
+<div class="our">
+  <center>1RK-<span>PROPERTIES</span></center>
+</div>
+  </header>
+       
+  <main>
+    <aside>   
+      <div class="il">  
+      <img src="/image/side.jpg" alt="">
+    </div>
+    </aside>
+    <article>
+      <div class="container">
+        <div class="item">
+          <img src="/image/buli.jpeg" alt="Image 1">
+        
+        </div>
+        <div class="right">
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3> 
+            <h2>₹70.09L-1.3Cr</h1>
+            <h1>400sq.ft</h1>
+            <h1>1 bedroom and 1 kitchen</h1>
+            
+            <button><a href="/produtdetail/index.html">View Properties</a> </button>
+        </div>
+        </div>
+        <div class="container">
+            <div class="item">
+              <img src="/image/buli.jpeg" alt="Image 1">
+             
+            </div>
+            <div class="right">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3> 
+                <h2>₹70.09L-1.3Cr</h1>
+                  <h1>400sq.ft</h1>
+                <h1>1 bedroom and 1 kitchen</h1>
+                
+                <button><a href="/produtdetail/index.html">View Properties</a> </button>
+            </div>
+            </div>
+        </div> 
+        <div class="container">
+            <div class="item">
+              <img src="/image/buli.jpeg" alt="Image 1">
+            
+            </div>
+            <div class="right">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3> 
+                <h2>₹70.09L-1.3Cr</h1>
+                  <h1>400sq.ft</h1>
+                <h1>1 bedroom and 1 kitchen</h1>
+                
+                <button><a href="/produtdetail/index.html">View Properties</a> </button>
+            </div>
+            </div>
+        
+
+              
+    </article>
+  
+  </main>
+  
+          
+
+          
+    
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img src="/image/logo.png" class="footer_logo">
+          <p class="footer_about">Real estate is defined as the land and any permanent structures, like a home, or
+            improvements attached to the
+            land, whether natural or man-made. Real estate is a form of real property.Real estate is real property that
+            consists of land and improvements, which include buildings, fixtures, roads, structures, and utility
+            systems.
+          </p>
+        </div>
+        <div class="col">
+          <h3>Office <div class="bottom_line"><span></span></div>
+          </h3>
+          <p>vasai west 60ft Road</p>
+          <p>Maharastra </p>
+          <p>Mumabi, ZIP 401202, India</p>
+          <p class="footer_email">alexastockphotos@gamil.com</p>
+          <h4>+91 9892195068</h4>
+        </div>
+        <div class="col">
+          <h3>Links <div class="bottom_line"><span></span></div>
+          </h3>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERVICE</a></li>
+            <li><a href="">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="col">
+
+          <form>
+            <ion-icon class="icon" name="mail"></ion-icon>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit"><ion-icon class="icon_right" name="arrow-round-forward"></ion-icon></button>
+          </form>
+          <div class="social_icons">
+            <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
+            <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
+            <ion-icon class="social_icon" name="logo-twitter"></ion-icon>
+            <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Web Geny Ⓒ 2023 - All Rights Reserved</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navToggle = document.getElementById("navToggle");
+        const navMenu = document.getElementById("navMenu");
+
+        navToggle.addEventListener("click", function () {
+          navMenu.classList.toggle("show");
+        });
+      });
+
+
+    </script>
+</body>
+
+</html>
